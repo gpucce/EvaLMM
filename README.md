@@ -10,7 +10,7 @@ The command `python evalmm/video_splitting/split_video.py video_location output_
 
 ## Video Captioning
 
-The `scripts` folder contains the command to first caption all the frames, that command can be run through 
+The `scripts` folder contains the command to first caption all the frames, that command can be run through
 
 `bash scripts/run_descriptive_captioning.sh` make sure to adjust the path to what you used as `output_path` in the above command
 
@@ -19,5 +19,7 @@ Finally to obtain a joint caption for each subvideo one can run the command
 `bash scripts/run_llama_captioning.sh`
 
 This last command will also use ffmpeg (which should be installed) to create the short videos with the caption, this requires quite some time.
+
+To install ffmpeg check the official page https://www.ffmpeg.org/
 
 > Note that both the scripts in the `scripts` folder assune that one has access to 4 different GPUs but it can be easily changed.
